@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Etch A Sketch</title>
+</head>
+<body onload="sketchStart(16)">
+    <div class="button-container">
+        <select name="squares-per-side" id="sps">
+            <option selected value="16">16 X 16</option>
+            <option value="64">64 X 64</option>
+            <option value="50">50 X 50</option>
+            <option value="30">30 X 30</option>
+        </select>
+        <button onclick="reset()" id="reset">Reset</button>
+        <button id="crazy-color">Crazy Color</button>
+        <button id="black">Black</button>
+    </div>
+    <div class="container">
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
